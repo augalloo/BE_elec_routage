@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Lib-BE)(type Legacy)(uri "C:/Users/augus/Desktop/INSA/3A bis/S2/BE elec/Routage/BE_elec/Lib-BE.lib")(options "")(descr ""))
+  (lib (name be-elec)(type Legacy)(uri "C:/Users/augus/Desktop/INSA/3A bis/S2/BE elec/Routage/BE_elec/be-elec.lib")(options "")(descr ""))
+)
