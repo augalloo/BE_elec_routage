@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Amplificateur Audio"
 Date ""
 Rev ""
-Comp ""
+Comp "Tom Jullien, Augustin Galloo"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -99,17 +99,6 @@ F 3 "~" H 2250 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
-U 1 1 60597BD9
-P 3150 6650
-F 0 "#PWR0102" H 3150 6400 50  0001 C CNN
-F 1 "GND" H 3155 6477 50  0000 C CNN
-F 2 "" H 3150 6650 50  0001 C CNN
-F 3 "" H 3150 6650 50  0001 C CNN
-	1    3150 6650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR0103
 U 1 1 60598403
 P 1900 5150
@@ -150,8 +139,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 6350 2250 6350
 Wire Wire Line
-	3150 6350 3150 6650
-Wire Wire Line
 	2250 6550 2250 6350
 Connection ~ 2250 6350
 Wire Wire Line
@@ -161,8 +148,6 @@ Wire Wire Line
 Wire Wire Line
 	2650 6550 2650 6350
 Connection ~ 2650 6350
-Wire Wire Line
-	2650 6350 3150 6350
 Wire Wire Line
 	2650 6350 2650 6200
 Wire Wire Line
@@ -364,7 +349,7 @@ L Device:C C2
 U 1 1 605B3462
 P 4400 3250
 F 0 "C2" H 4515 3296 50  0000 L CNN
-F 1 "100n" H 4515 3205 50  0000 L CNN
+F 1 "C" H 4515 3205 50  0000 L CNN
 F 2 "CmpAmpliAudio:C_Rect_L7.2mm_W3.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" H 4438 3100 50  0001 C CNN
 F 3 "~" H 4400 3250 50  0001 C CNN
 	1    4400 3250
@@ -473,17 +458,6 @@ Wire Wire Line
 Connection ~ 5100 2950
 Wire Wire Line
 	5100 2950 5100 2800
-$Comp
-L Device:R_POT RV1
-U 1 1 605D032E
-P 4500 2600
-F 0 "RV1" H 4431 2646 50  0000 R CNN
-F 1 "R_POT" H 4431 2555 50  0000 R CNN
-F 2 "CmpAmpliAudio:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" H 4500 2600 50  0001 C CNN
-F 3 "~" H 4500 2600 50  0001 C CNN
-	1    4500 2600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4500 2750 4500 2950
 Wire Wire Line
@@ -568,7 +542,7 @@ U 1 1 605E8D0B
 P 3950 2950
 F 0 "RV2" H 3880 2904 50  0000 R CNN
 F 1 "R_POT" H 3880 2995 50  0000 R CNN
-F 2 "CmpAmpliAudio:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" H 3950 2950 50  0001 C CNN
+F 2 "CmpAmpliAudio:Potentiometer_Bourns_3296W_Vertical" H 3950 2950 50  0001 C CNN
 F 3 "~" H 3950 2950 50  0001 C CNN
 	1    3950 2950
 	-1   0    0    1   
@@ -629,12 +603,7 @@ $EndComp
 Wire Wire Line
 	5100 2150 5100 2200
 Wire Wire Line
-	4500 2500 4500 2450
-Wire Wire Line
 	4500 2350 5100 2350
-Connection ~ 4500 2450
-Wire Wire Line
-	4500 2450 4500 2350
 Connection ~ 5100 2350
 Wire Wire Line
 	5100 2350 5100 2400
@@ -671,7 +640,7 @@ U 1 1 6065B967
 P 6400 2800
 F 0 "R11" H 6470 2846 50  0000 L CNN
 F 1 "R" H 6470 2755 50  0000 L CNN
-F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6330 2800 50  0001 C CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 6330 2800 50  0001 C CNN
 F 3 "~" H 6400 2800 50  0001 C CNN
 	1    6400 2800
 	1    0    0    -1  
@@ -682,7 +651,7 @@ U 1 1 6065C2E4
 P 6400 3300
 F 0 "R12" H 6470 3346 50  0000 L CNN
 F 1 "R" H 6470 3255 50  0000 L CNN
-F 2 "CmpAmpliAudio:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6330 3300 50  0001 C CNN
+F 2 "CmpAmpliAudio:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal" V 6330 3300 50  0001 C CNN
 F 3 "~" H 6400 3300 50  0001 C CNN
 	1    6400 3300
 	1    0    0    -1  
@@ -1174,4 +1143,74 @@ F 3 "~" H 5000 1950 50  0001 C CNN
 	1    5000 1950
 	1    0    0    1   
 $EndComp
+$Comp
+L Diode:1N4001 D3
+U 1 1 6073DFD1
+P 3100 6050
+F 0 "D3" V 3054 6130 50  0000 L CNN
+F 1 "1N4001" V 3145 6130 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3100 5875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3100 6050 50  0001 C CNN
+	1    3100 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4001 D4
+U 1 1 6073FEE5
+P 3100 6700
+F 0 "D4" V 3054 6780 50  0000 L CNN
+F 1 "1N4001" V 3145 6780 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3100 6525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3100 6700 50  0001 C CNN
+	1    3100 6700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 6350 3100 6350
+Wire Wire Line
+	3100 6350 3100 6200
+Wire Wire Line
+	3100 6550 3100 6350
+Connection ~ 3100 6350
+Wire Wire Line
+	3100 5900 3100 5400
+Wire Wire Line
+	3100 5400 2650 5400
+Connection ~ 2650 5400
+Wire Wire Line
+	3100 6850 3100 7050
+Wire Wire Line
+	3100 7050 2650 7050
+Connection ~ 2650 7050
+$Comp
+L power:GND #PWR0102
+U 1 1 6077786D
+P 3750 6600
+F 0 "#PWR0102" H 3750 6350 50  0001 C CNN
+F 1 "GND" H 3755 6427 50  0000 C CNN
+F 2 "" H 3750 6600 50  0001 C CNN
+F 3 "" H 3750 6600 50  0001 C CNN
+	1    3750 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 6350 3750 6600
+Wire Wire Line
+	3100 6350 3750 6350
+Wire Wire Line
+	4500 2350 4500 2450
+$Comp
+L Device:R_POT RV1
+U 1 1 607C81F8
+P 4500 2600
+F 0 "RV1" H 4431 2646 50  0000 R CNN
+F 1 "R_POT" H 4431 2555 50  0000 R CNN
+F 2 "CmpAmpliAudio:Potentiometer_Bourns_3296W_Vertical" H 4500 2600 50  0001 C CNN
+F 3 "~" H 4500 2600 50  0001 C CNN
+	1    4500 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 2450
+Wire Wire Line
+	4500 2450 4500 2500
 $EndSCHEMATC
