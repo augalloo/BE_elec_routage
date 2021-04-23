@@ -30,3 +30,6 @@ TO-126-3_Vertical
 
 pads dimamètre longueurs passées  à 2.7
 TO-220-3_Vertical
+
+pads dimamètre longueurs passées  à 2.1 et 2.5 pour la bobine et le contact
+35RAPC2AV
