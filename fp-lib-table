@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name BE_Elec)(type KiCad)(uri "C:/Users/augus/Desktop/INSA/3A bis/S2/BE elec/Routage/BE_elec/BE_Elec.pretty")(options "")(descr ""))
+  (lib (name TR_MaLib_Ampli_2021)(type KiCad)(uri "C:/Users/augus/Desktop/INSA/3A bis/S2/BE elec/Routage/BE_elec_routage-main/TR_MaLib_Ampli_2021/CmpAmpliAudioTR.pretty")(options "")(descr ""))
 )
