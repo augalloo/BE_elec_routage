@@ -2,8 +2,13 @@
 
   (general
     (thickness 1.6)
+<<<<<<< HEAD
     (drawings 6)
     (tracks 293)
+=======
+    (drawings 4)
+    (tracks 243)
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
     (zones 0)
     (modules 54)
     (nets 32)
@@ -170,6 +175,7 @@
     (add_net "Net-(U2-PadTN)")
   )
 
+<<<<<<< HEAD
   (module CmpAmpliAudio:TO-126-3_Vertical (layer F.Cu) (tedit 5E64C417) (tstamp 60747B8A)
     (at 44.45 66.04 270)
     (descr "TO-126-3, Vertical, RM 2.54mm, see https://www.diodes.com/assets/Package-Files/TO126.pdf")
@@ -209,12 +215,50 @@
     (pad 1 thru_hole rect (at 0 0 270) (size 1.7 1.9) (drill 1) (layers *.Cu *.Mask)
       (net 25 "Net-(Q10-Pad2)"))
     (model ${KISYS3DMOD}/Package_TO_SOT_THT.3dshapes/TO-126-3_Vertical.wrl
+=======
+  (module CmpAmpliAudio:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal (layer F.Cu) (tedit 5E64C254) (tstamp 60747D00)
+    (at 102.87 34.29 270)
+    (descr "Resistor, Axial_DIN0516 series, Axial, Horizontal, pin pitch=20.32mm, 2W, length*diameter=15.5*5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
+    (tags "Resistor Axial_DIN0516 series Axial Horizontal pin pitch 20.32mm 2W length 15.5mm diameter 5mm")
+    (path /6065C2E4)
+    (fp_text reference R12 (at 10.16 -3.62 90) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value R (at 10.16 3.62 90) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start 21.77 -2.75) (end -1.45 -2.75) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 21.77 2.75) (end 21.77 -2.75) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.45 2.75) (end 21.77 2.75) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.45 -2.75) (end -1.45 2.75) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 18.88 0) (end 18.03 0) (layer F.SilkS) (width 0.12))
+    (fp_line (start 1.44 0) (end 2.29 0) (layer F.SilkS) (width 0.12))
+    (fp_line (start 18.03 -2.62) (end 2.29 -2.62) (layer F.SilkS) (width 0.12))
+    (fp_line (start 18.03 2.62) (end 18.03 -2.62) (layer F.SilkS) (width 0.12))
+    (fp_line (start 2.29 2.62) (end 18.03 2.62) (layer F.SilkS) (width 0.12))
+    (fp_line (start 2.29 -2.62) (end 2.29 2.62) (layer F.SilkS) (width 0.12))
+    (fp_line (start 20.32 0) (end 17.91 0) (layer F.Fab) (width 0.1))
+    (fp_line (start 0 0) (end 2.41 0) (layer F.Fab) (width 0.1))
+    (fp_line (start 17.91 -2.5) (end 2.41 -2.5) (layer F.Fab) (width 0.1))
+    (fp_line (start 17.91 2.5) (end 17.91 -2.5) (layer F.Fab) (width 0.1))
+    (fp_line (start 2.41 2.5) (end 17.91 2.5) (layer F.Fab) (width 0.1))
+    (fp_line (start 2.41 -2.5) (end 2.41 2.5) (layer F.Fab) (width 0.1))
+    (fp_text user %R (at 10.16 0 90) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 2 thru_hole oval (at 20.32 0 270) (size 2.4 2.4) (drill 1) (layers *.Cu *.Mask)
+      (net 26 "Net-(Q11-Pad1)"))
+    (pad 1 thru_hole circle (at 0 0 270) (size 2.4 2.4) (drill 1) (layers *.Cu *.Mask)
+      (net 30 "Net-(R11-Pad2)"))
+    (model ${KISYS3DMOD}/Resistor_THT.3dshapes/R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal.wrl
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
   )
 
+<<<<<<< HEAD
   (module CmpAmpliAudio:R_Axial_DIN0516_L15.5mm_D5.0mm_P20.32mm_Horizontal (layer F.Cu) (tedit 5E64C254) (tstamp 60747D00)
     (at 102.87 34.29 270)
     (descr "Resistor, Axial_DIN0516 series, Axial, Horizontal, pin pitch=20.32mm, 2W, length*diameter=15.5*5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
@@ -298,6 +342,50 @@
     (fp_text user %R (at 5.38 0) (layer F.Fab)
       (effects (font (size 0.8 0.8) (thickness 0.12)))
     )
+=======
+  (module CmpAmpliAudio:D_DO-35_SOD27_P10.16mm_Horizontal (layer F.Cu) (tedit 5E64C07F) (tstamp 60747911)
+    (at 69.85 73.66)
+    (descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
+    (tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 10.16mm  length 4mm diameter 2mm")
+    (path /606FC01B)
+    (fp_text reference D1 (at 5.08 -2.12) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1N4148 (at 5.08 2.12) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start 11.21 -1.25) (end -1.05 -1.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 11.21 1.25) (end 11.21 -1.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.05 1.25) (end 11.21 1.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.05 -1.25) (end -1.05 1.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 3.56 -1.12) (end 3.56 1.12) (layer F.SilkS) (width 0.12))
+    (fp_line (start 3.8 -1.12) (end 3.8 1.12) (layer F.SilkS) (width 0.12))
+    (fp_line (start 3.68 -1.12) (end 3.68 1.12) (layer F.SilkS) (width 0.12))
+    (fp_line (start 9.12 0) (end 7.2 0) (layer F.SilkS) (width 0.12))
+    (fp_line (start 1.04 0) (end 2.96 0) (layer F.SilkS) (width 0.12))
+    (fp_line (start 7.2 -1.12) (end 2.96 -1.12) (layer F.SilkS) (width 0.12))
+    (fp_line (start 7.2 1.12) (end 7.2 -1.12) (layer F.SilkS) (width 0.12))
+    (fp_line (start 2.96 1.12) (end 7.2 1.12) (layer F.SilkS) (width 0.12))
+    (fp_line (start 2.96 -1.12) (end 2.96 1.12) (layer F.SilkS) (width 0.12))
+    (fp_line (start 3.58 -1) (end 3.58 1) (layer F.Fab) (width 0.1))
+    (fp_line (start 3.78 -1) (end 3.78 1) (layer F.Fab) (width 0.1))
+    (fp_line (start 3.68 -1) (end 3.68 1) (layer F.Fab) (width 0.1))
+    (fp_line (start 10.16 0) (end 7.08 0) (layer F.Fab) (width 0.1))
+    (fp_line (start 0 0) (end 3.08 0) (layer F.Fab) (width 0.1))
+    (fp_line (start 7.08 -1) (end 3.08 -1) (layer F.Fab) (width 0.1))
+    (fp_line (start 7.08 1) (end 7.08 -1) (layer F.Fab) (width 0.1))
+    (fp_line (start 3.08 1) (end 7.08 1) (layer F.Fab) (width 0.1))
+    (fp_line (start 3.08 -1) (end 3.08 1) (layer F.Fab) (width 0.1))
+    (fp_text user K (at 0 -1.8) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user K (at 0 -1.8) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user %R (at 5.38 0) (layer F.Fab)
+      (effects (font (size 0.8 0.8) (thickness 0.12)))
+    )
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
     (pad 2 thru_hole oval (at 10.16 0) (size 1.9 1.9) (drill 0.7) (layers *.Cu *.Mask)
       (net 9 "Net-(D1-Pad2)"))
     (pad 1 thru_hole rect (at 0 0) (size 1.9 1.9) (drill 0.7) (layers *.Cu *.Mask)
@@ -2671,6 +2759,12 @@
     (pad 1 thru_hole circle (at -0.2 -0.1 270) (size 1.5 1.5) (drill 0.7) (layers *.Cu *.Mask)
       (net 22 "Net-(Q7-Pad1)"))
     (pad 2 thru_hole circle (at 1.27 1.4 270) (size 1.5 1.5) (drill 0.7) (layers *.Cu *.Mask)
+<<<<<<< HEAD
+      (net 20 "Net-(Q6-Pad2)"))
+    (pad 3 thru_hole circle (at 2.7 -0.1 270) (size 1.5 1.5) (drill 0.7) (layers *.Cu *.Mask)
+      (net 20 "Net-(Q6-Pad2)"))
+    (model ${KISYS3DMOD}/Package_TO_SOT_THT.3dshapes/TO-18-3.wrl
+=======
       (net 20 "Net-(Q6-Pad2)"))
     (pad 3 thru_hole circle (at 2.7 -0.1 270) (size 1.5 1.5) (drill 0.7) (layers *.Cu *.Mask)
       (net 20 "Net-(Q6-Pad2)"))
@@ -2711,6 +2805,56 @@
     (fp_line (start 6.79 1.5) (end 6.79 -2.25) (layer F.CrtYd) (width 0.05))
     (fp_line (start 6.79 -2.25) (end -1.71 -2.25) (layer F.CrtYd) (width 0.05))
     (fp_text user %R (at 2.54 -3.12 90) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole rect (at 0 0 90) (size 1.7 1.9) (drill 1) (layers *.Cu *.Mask)
+      (net 3 "Net-(C2-Pad1)"))
+    (pad 2 thru_hole rect (at 2.54 0 90) (size 1.7 1.9) (drill 1) (layers *.Cu *.Mask)
+      (net 21 "Net-(Q6-Pad3)"))
+    (pad 3 thru_hole rect (at 5.08 0 90) (size 1.7 1.9) (drill 1) (layers *.Cu *.Mask)
+      (net 23 "Net-(Q8-Pad3)"))
+    (model ${KISYS3DMOD}/Package_TO_SOT_THT.3dshapes/TO-126-3_Vertical.wrl
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+  )
+
+  (module CmpAmpliAudio:TO-126-3_Vertical (layer F.Cu) (tedit 5E64C417) (tstamp 60747B70)
+    (at 34.29 83.82 90)
+    (descr "TO-126-3, Vertical, RM 2.54mm, see https://www.diodes.com/assets/Package-Files/TO126.pdf")
+    (tags "TO-126-3 Vertical RM 2.54mm")
+    (path /605CBE68)
+    (fp_text reference Q8 (at 2.54 -3.12 90) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value BD139 (at 2.54 2.5 90) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start 6.79 -2.25) (end -1.71 -2.25) (layer F.CrtYd) (width 0.05))
+<<<<<<< HEAD
+    (fp_text user %R (at 2.54 -3.12 90) (layer F.Fab)
+=======
+    (fp_line (start 6.79 1.5) (end 6.79 -2.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.71 1.5) (end 6.79 1.5) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.71 -2.25) (end -1.71 1.5) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 4.141 0.54) (end 4.141 1.37) (layer F.SilkS) (width 0.12))
+    (fp_line (start 4.141 -2.12) (end 4.141 -0.54) (layer F.SilkS) (width 0.12))
+    (fp_line (start 0.94 1.05) (end 0.94 1.37) (layer F.SilkS) (width 0.12))
+    (fp_line (start 0.94 -2.12) (end 0.94 -1.05) (layer F.SilkS) (width 0.12))
+    (fp_line (start 6.66 -2.12) (end 6.66 1.37) (layer F.SilkS) (width 0.12))
+    (fp_line (start -1.58 -2.12) (end -1.58 1.37) (layer F.SilkS) (width 0.12))
+    (fp_line (start -1.58 1.37) (end 6.66 1.37) (layer F.SilkS) (width 0.12))
+    (fp_line (start -1.58 -2.12) (end 6.66 -2.12) (layer F.SilkS) (width 0.12))
+    (fp_line (start 4.14 -2) (end 4.14 1.25) (layer F.Fab) (width 0.1))
+    (fp_line (start 0.94 -2) (end 0.94 1.25) (layer F.Fab) (width 0.1))
+    (fp_line (start 6.54 -2) (end -1.46 -2) (layer F.Fab) (width 0.1))
+    (fp_line (start 6.54 1.25) (end 6.54 -2) (layer F.Fab) (width 0.1))
+    (fp_line (start -1.46 1.25) (end 6.54 1.25) (layer F.Fab) (width 0.1))
+    (fp_line (start -1.46 -2) (end -1.46 1.25) (layer F.Fab) (width 0.1))
+    (fp_text user %R (at 2.54 -3.12) (layer F.Fab)
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 thru_hole rect (at 0 0 90) (size 1.7 1.9) (drill 1) (layers *.Cu *.Mask)
@@ -3717,12 +3861,22 @@
   (segment (start 57.5 107.6) (end 71.910002 107.6) (width 0.6) (layer B.Cu) (net 2))
   (segment (start 45.88 94.14) (end 39.37 87.63) (width 0.6) (layer B.Cu) (net 3))
   (segment (start 54.71 94.14) (end 45.88 94.14) (width 0.6) (layer B.Cu) (net 3))
+<<<<<<< HEAD
+=======
+  (segment (start 48.585998 94.14) (end 54.71 94.14) (width 0.6) (layer B.Cu) (net 3))
+  (segment (start 42.819999 88.374001) (end 48.585998 94.14) (width 0.6) (layer B.Cu) (net 3))
+  (segment (start 42.819999 86.885999) (end 42.819999 88.374001) (width 0.6) (layer B.Cu) (net 3))
+  (segment (start 43.625999 86.079999) (end 42.819999 86.885999) (width 0.6) (layer B.Cu) (net 3))
+  (segment (start 47.270001 86.079999) (end 43.625999 86.079999) (width 0.6) (layer B.Cu) (net 3))
+  (segment (start 59.69 73.66) (end 47.270001 86.079999) (width 0.6) (layer B.Cu) (net 3))
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
   (segment (start 71.12 96.048002) (end 71.12 93.98) (width 0.6) (layer B.Cu) (net 3))
   (segment (start 70.338001 96.830001) (end 71.12 96.048002) (width 0.6) (layer B.Cu) (net 3))
   (segment (start 57.400001 96.830001) (end 70.338001 96.830001) (width 0.6) (layer B.Cu) (net 3))
   (segment (start 54.71 94.14) (end 57.400001 96.830001) (width 0.6) (layer B.Cu) (net 3))
   (segment (start 35.56 83.82) (end 39.37 87.63) (width 0.6) (layer B.Cu) (net 3))
   (segment (start 34.29 83.82) (end 35.56 83.82) (width 0.6) (layer B.Cu) (net 3))
+<<<<<<< HEAD
   (segment (start 115.20001 47.35999) (end 104.14 58.42) (width 0.6) (layer B.Cu) (net 3))
   (segment (start 115.20001 39.937204) (end 115.20001 47.35999) (width 0.6) (layer B.Cu) (net 3))
   (segment (start 111.355592 36.092786) (end 115.20001 39.937204) (width 0.6) (layer B.Cu) (net 3))
@@ -3740,10 +3894,13 @@
   (segment (start 99.06 36.092786) (end 111.355592 36.092786) (width 0.6) (layer B.Cu) (net 3))
   (segment (start 50.487205 82.862795) (end 43.119993 82.862795) (width 0.6) (layer B.Cu) (net 3))
   (segment (start 59.69 73.66) (end 50.487205 82.862795) (width 0.6) (layer B.Cu) (net 3))
+=======
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
   (segment (start 100.49 106.52) (end 100.49 107.85) (width 0.6) (layer B.Cu) (net 4))
   (segment (start 109.22 97.79) (end 100.49 106.52) (width 0.6) (layer B.Cu) (net 4))
   (segment (start 48.13 87.63) (end 53.21 92.71) (width 0.6) (layer B.Cu) (net 4))
   (segment (start 44.37 87.63) (end 48.13 87.63) (width 0.6) (layer B.Cu) (net 4))
+<<<<<<< HEAD
   (segment (start 85.051997 106.960001) (end 85.511999 106.499999) (width 0.6) (layer F.Cu) (net 4))
   (segment (start 69.105999 106.960001) (end 85.051997 106.960001) (width 0.6) (layer F.Cu) (net 4))
   (segment (start 99.139999 106.499999) (end 100.49 107.85) (width 0.6) (layer F.Cu) (net 4))
@@ -3752,6 +3909,9 @@
   (segment (start 55.278002 92.71) (end 68.299999 105.731997) (width 0.6) (layer F.Cu) (net 4))
   (segment (start 85.511999 106.499999) (end 99.139999 106.499999) (width 0.6) (layer F.Cu) (net 4))
   (segment (start 53.21 92.71) (end 55.278002 92.71) (width 0.6) (layer F.Cu) (net 4))
+=======
+  (segment (start 109.22 87.63) (end 116.84 87.63) (width 0.6) (layer B.Cu) (net 5))
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
   (segment (start 109.22 80.255998) (end 109.22 87.63) (width 0.6) (layer B.Cu) (net 5))
   (segment (start 108.462001 69.337999) (end 108.462001 79.497999) (width 0.6) (layer B.Cu) (net 5))
   (segment (start 102.899988 65.13999) (end 104.263992 65.13999) (width 0.6) (layer B.Cu) (net 5))
@@ -3783,10 +3943,13 @@
   (segment (start 77.333503 80.299999) (end 67.020001 80.299999) (width 2) (layer B.Cu) (net 5))
   (segment (start 86.44 71.193502) (end 77.333503 80.299999) (width 2) (layer B.Cu) (net 5))
   (segment (start 86.44 69.85) (end 86.44 71.193502) (width 2) (layer B.Cu) (net 5))
+<<<<<<< HEAD
   (segment (start 109.22 87.63) (end 116.84 87.63) (width 2) (layer B.Cu) (net 5))
   (segment (start 58.709999 76.489999) (end 66.04 83.82) (width 2) (layer F.Cu) (net 5))
   (segment (start 45.929999 76.489999) (end 58.709999 76.489999) (width 2) (layer F.Cu) (net 5))
   (segment (start 40.56 71.12) (end 45.929999 76.489999) (width 2) (layer F.Cu) (net 5))
+=======
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
   (segment (start 90.17 82.55) (end 96.52 76.2) (width 0.6) (layer B.Cu) (net 6))
   (segment (start 85.09 82.55) (end 90.17 82.55) (width 0.6) (layer B.Cu) (net 6))
   (segment (start 91.44 71.12) (end 96.52 76.2) (width 0.6) (layer B.Cu) (net 6))
@@ -3795,6 +3958,11 @@
   (segment (start 27.94 53.34) (end 27.94 59.61) (width 0.6) (layer B.Cu) (net 7))
   (segment (start 25.32 62.23) (end 25.32 71.12) (width 0.6) (layer B.Cu) (net 7))
   (segment (start 27.94 53.34) (end 34.29 53.34) (width 0.6) (layer B.Cu) (net 7))
+<<<<<<< HEAD
+=======
+  (segment (start 32.94 59.61) (end 35.56 62.23) (width 0.6) (layer B.Cu) (net 7))
+  (segment (start 27.94 59.61) (end 32.94 59.61) (width 0.6) (layer B.Cu) (net 7))
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
   (segment (start 35.56 62.23) (end 35.56 71.12) (width 0.6) (layer B.Cu) (net 7))
   (segment (start 48.74 104.14) (end 57.5 112.9) (width 0.6) (layer B.Cu) (net 7))
   (segment (start 46.99 104.14) (end 48.74 104.14) (width 0.6) (layer B.Cu) (net 7))
@@ -3828,11 +3996,14 @@
   (segment (start 84.649998 97.033504) (end 84.649998 95.25) (width 0.6) (layer B.Cu) (net 7))
   (segment (start 71.193502 110.49) (end 84.649998 97.033504) (width 0.6) (layer B.Cu) (net 7))
   (segment (start 69.85 110.49) (end 71.193502 110.49) (width 0.6) (layer B.Cu) (net 7))
+<<<<<<< HEAD
   (segment (start 86.605998 86.36) (end 90.17 86.36) (width 0.6) (layer F.Cu) (net 7))
   (segment (start 76.380001 76.134003) (end 86.605998 86.36) (width 0.6) (layer F.Cu) (net 7))
   (segment (start 76.380001 64.650001) (end 76.380001 76.134003) (width 0.6) (layer F.Cu) (net 7))
   (segment (start 75.03 63.3) (end 76.380001 64.650001) (width 0.6) (layer F.Cu) (net 7))
   (segment (start 35.56 62.23) (end 25.32 62.23) (width 0.6) (layer B.Cu) (net 7))
+=======
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
   (segment (start 20.32 44.37) (end 20.4 44.45) (width 2) (layer B.Cu) (net 8))
   (segment (start 20.32 31.75) (end 20.32 44.37) (width 2) (layer B.Cu) (net 8))
   (segment (start 43.18 21.59) (end 30.48 21.59) (width 2) (layer B.Cu) (net 8))
@@ -3866,9 +4037,12 @@
   (segment (start 76.2 100.33) (end 74.93 100.33) (width 2) (layer B.Cu) (net 8))
   (segment (start 76.2 90.860002) (end 71.409999 86.070001) (width 2) (layer B.Cu) (net 8))
   (segment (start 76.2 100.33) (end 76.2 90.860002) (width 2) (layer B.Cu) (net 8))
+<<<<<<< HEAD
   (segment (start 47.829998 49.53) (end 49.53 49.53) (width 2) (layer F.Cu) (net 8))
   (segment (start 43.18 44.880002) (end 47.829998 49.53) (width 2) (layer F.Cu) (net 8))
   (segment (start 43.18 21.59) (end 43.18 44.880002) (width 2) (layer F.Cu) (net 8))
+=======
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
   (segment (start 72.961998 66.2) (end 75.03 66.2) (width 0.6) (layer B.Cu) (net 9))
   (segment (start 72.179999 65.418001) (end 72.961998 66.2) (width 0.6) (layer B.Cu) (net 9))
   (segment (start 72.179999 56.090001) (end 72.179999 65.418001) (width 0.6) (layer B.Cu) (net 9))
@@ -3893,6 +4067,7 @@
   (segment (start 114.1 104.04) (end 107.439999 110.700001) (width 0.6) (layer B.Cu) (net 13))
   (segment (start 117 97.95) (end 116.84 97.79) (width 0.6) (layer B.Cu) (net 14))
   (segment (start 117 104.04) (end 117 97.95) (width 0.6) (layer B.Cu) (net 14))
+<<<<<<< HEAD
   (segment (start 117.502745 89.23001) (end 121.92 84.812755) (width 0.6) (layer B.Cu) (net 15))
   (segment (start 121.92 84.812755) (end 121.92 64.77) (width 0.6) (layer B.Cu) (net 15))
   (segment (start 100.33 86.36) (end 103.20001 89.23001) (width 0.6) (layer B.Cu) (net 15))
@@ -3902,6 +4077,15 @@
   (segment (start 113.96999 89.23001) (end 117.502745 89.23001) (width 0.6) (layer B.Cu) (net 15))
   (segment (start 114.3 89.56002) (end 113.96999 89.23001) (width 0.6) (layer B.Cu) (net 15))
   (segment (start 103.20001 89.23001) (end 113.96999 89.23001) (width 0.6) (layer B.Cu) (net 15))
+=======
+  (segment (start 100.33 86.605998) (end 100.33 86.36) (width 0.6) (layer B.Cu) (net 15))
+  (segment (start 115.57 101.845998) (end 100.33 86.605998) (width 0.6) (layer B.Cu) (net 15))
+  (segment (start 115.57 105.54) (end 115.57 101.845998) (width 0.6) (layer B.Cu) (net 15))
+  (segment (start 121.92 84.844002) (end 121.92 64.77) (width 0.6) (layer B.Cu) (net 15))
+  (segment (start 117.584001 89.180001) (end 121.92 84.844002) (width 0.6) (layer B.Cu) (net 15))
+  (segment (start 103.150001 89.180001) (end 117.584001 89.180001) (width 0.6) (layer B.Cu) (net 15))
+  (segment (start 100.33 86.36) (end 103.150001 89.180001) (width 0.6) (layer B.Cu) (net 15))
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
   (segment (start 82.45 107.85) (end 80.01 105.41) (width 0.6) (layer B.Cu) (net 16))
   (segment (start 86.16 107.85) (end 82.45 107.85) (width 0.6) (layer B.Cu) (net 16))
   (segment (start 58.95 95.48) (end 69.69 95.48) (width 0.6) (layer B.Cu) (net 17))
@@ -3909,6 +4093,7 @@
   (via (at 120 110) (size 3.5) (drill 3) (layers F.Cu B.Cu) (net 18))
   (segment (start 58.06 83.82) (end 68.22 93.98) (width 0.6) (layer B.Cu) (net 18))
   (segment (start 55.88 83.82) (end 58.06 83.82) (width 0.6) (layer B.Cu) (net 18))
+<<<<<<< HEAD
   (segment (start 120 104.76) (end 120 110) (width 0.6) (layer F.Cu) (net 18))
   (segment (start 111.825997 102.689999) (end 117.929999 102.689999) (width 0.6) (layer F.Cu) (net 18))
   (segment (start 107.915997 98.779999) (end 111.825997 102.689999) (width 0.6) (layer F.Cu) (net 18))
@@ -3928,6 +4113,21 @@
   (segment (start 21.46 105.41) (end 21.46 103.441998) (width 0.6) (layer B.Cu) (net 20))
   (segment (start 22.89 106.84) (end 21.46 105.41) (width 0.6) (layer B.Cu) (net 20))
   (segment (start 22.96 106.84) (end 22.89 106.84) (width 0.6) (layer B.Cu) (net 20))
+=======
+  (segment (start 26.37 97.79) (end 26.57 97.99) (width 0.6) (layer B.Cu) (net 19))
+  (segment (start 19.05 97.79) (end 26.37 97.79) (width 0.6) (layer B.Cu) (net 19))
+  (segment (start 31.91 106.84) (end 36.83 111.76) (width 0.6) (layer B.Cu) (net 20))
+  (segment (start 22.96 106.84) (end 31.91 106.84) (width 0.6) (layer B.Cu) (net 20))
+  (segment (start 35.840001 104.884001) (end 34.044002 106.68) (width 0.6) (layer B.Cu) (net 20))
+  (segment (start 35.840001 103.229341) (end 35.840001 104.884001) (width 0.6) (layer B.Cu) (net 20))
+  (segment (start 29.13066 96.52) (end 35.840001 103.229341) (width 0.6) (layer B.Cu) (net 20))
+  (segment (start 28.07 96.52) (end 29.13066 96.52) (width 0.6) (layer B.Cu) (net 20))
+  (segment (start 32.07 106.68) (end 31.91 106.84) (width 0.6) (layer B.Cu) (net 20))
+  (segment (start 34.044002 106.68) (end 32.07 106.68) (width 0.6) (layer B.Cu) (net 20))
+  (segment (start 51.080001 70.130001) (end 50.8 69.85) (width 0.6) (layer B.Cu) (net 21))
+  (segment (start 51.080001 77.189999) (end 51.080001 70.130001) (width 0.6) (layer B.Cu) (net 21))
+  (segment (start 49.53 78.74) (end 51.080001 77.189999) (width 0.6) (layer B.Cu) (net 21))
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
   (segment (start 28.638002 95.09) (end 26.57 95.09) (width 0.6) (layer B.Cu) (net 21))
   (segment (start 34.944012 95.61999) (end 29.167992 95.61999) (width 0.6) (layer B.Cu) (net 21))
   (segment (start 35.840001 94.724001) (end 34.944012 95.61999) (width 0.6) (layer B.Cu) (net 21))
@@ -3940,10 +4140,13 @@
   (segment (start 49.53 80.29) (end 49.53 78.74) (width 0.6) (layer B.Cu) (net 21))
   (segment (start 48.54 81.28) (end 49.53 80.29) (width 0.6) (layer B.Cu) (net 21))
   (segment (start 34.29 81.28) (end 48.54 81.28) (width 0.6) (layer B.Cu) (net 21))
+<<<<<<< HEAD
   (segment (start 51.080001 77.189999) (end 49.53 78.74) (width 0.6) (layer B.Cu) (net 21))
   (segment (start 51.080001 72.915999) (end 51.080001 77.189999) (width 0.6) (layer B.Cu) (net 21))
   (segment (start 49.284002 71.12) (end 51.080001 72.915999) (width 0.6) (layer B.Cu) (net 21))
   (segment (start 44.45 71.12) (end 49.284002 71.12) (width 0.6) (layer B.Cu) (net 21))
+=======
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
   (segment (start 34.09 103.94) (end 34.29 104.14) (width 0.6) (layer B.Cu) (net 22))
   (segment (start 22.96 103.94) (end 34.09 103.94) (width 0.6) (layer B.Cu) (net 22))
   (segment (start 46.99 80.01) (end 46.99 78.74) (width 0.6) (layer B.Cu) (net 23))
@@ -3951,6 +4154,7 @@
   (segment (start 43.219999 80.290001) (end 46.709999 80.290001) (width 0.6) (layer B.Cu) (net 23))
   (segment (start 41.669998 78.74) (end 43.219999 80.290001) (width 0.6) (layer B.Cu) (net 23))
   (segment (start 34.29 78.74) (end 41.669998 78.74) (width 0.6) (layer B.Cu) (net 23))
+<<<<<<< HEAD
   (segment (start 49.089998 44.45) (end 49.53 44.45) (width 0.6) (layer B.Cu) (net 24))
   (segment (start 47.029989 46.510009) (end 49.089998 44.45) (width 0.6) (layer B.Cu) (net 24))
   (segment (start 47.029989 53.276013) (end 47.029989 46.510009) (width 0.6) (layer B.Cu) (net 24))
@@ -3958,12 +4162,20 @@
   (segment (start 42.899999 67.370001) (end 42.899999 57.406003) (width 0.6) (layer B.Cu) (net 24))
   (segment (start 44.109998 68.58) (end 42.899999 67.370001) (width 0.6) (layer B.Cu) (net 24))
   (segment (start 44.45 68.58) (end 44.109998 68.58) (width 0.6) (layer B.Cu) (net 24))
+=======
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
   (segment (start 57.15 46.99) (end 67.31 36.83) (width 0.6) (layer B.Cu) (net 25))
   (segment (start 49.53 46.99) (end 57.15 46.99) (width 0.6) (layer B.Cu) (net 25))
   (segment (start 49.089998 46.99) (end 49.53 46.99) (width 0.6) (layer B.Cu) (net 25))
   (segment (start 47.929999 48.149999) (end 49.089998 46.99) (width 0.6) (layer B.Cu) (net 25))
+<<<<<<< HEAD
   (segment (start 47.929999 62.560001) (end 47.929999 48.149999) (width 0.6) (layer B.Cu) (net 25))
   (segment (start 44.45 66.04) (end 47.929999 62.560001) (width 0.6) (layer B.Cu) (net 25))
+=======
+  (segment (start 47.929999 52.376003) (end 47.929999 48.149999) (width 0.6) (layer B.Cu) (net 25))
+  (segment (start 45.72 54.586002) (end 47.929999 52.376003) (width 0.6) (layer B.Cu) (net 25))
+  (segment (start 45.72 69.85) (end 45.72 54.586002) (width 0.6) (layer B.Cu) (net 25))
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
   (segment (start 99.06 56.722944) (end 99.06 58.42) (width 0.6) (layer B.Cu) (net 26))
   (segment (start 101.172944 54.61) (end 99.06 56.722944) (width 0.6) (layer B.Cu) (net 26))
   (segment (start 102.87 54.61) (end 101.172944 54.61) (width 0.6) (layer B.Cu) (net 26))
@@ -3994,9 +4206,12 @@
   (segment (start 120.440001 37.641999) (end 120.440001 56.338001) (width 0.6) (layer B.Cu) (net 30))
   (segment (start 117.088002 34.29) (end 120.440001 37.641999) (width 0.6) (layer B.Cu) (net 30))
   (segment (start 102.87 34.29) (end 117.088002 34.29) (width 0.6) (layer B.Cu) (net 30))
+<<<<<<< HEAD
   (segment (start 97.259999 39.900001) (end 102.87 34.29) (width 0.6) (layer F.Cu) (net 30))
   (segment (start 87.219999 39.900001) (end 97.259999 39.900001) (width 0.6) (layer F.Cu) (net 30))
   (segment (start 86.249998 38.93) (end 87.219999 39.900001) (width 0.6) (layer F.Cu) (net 30))
   (segment (start 74.1 38.93) (end 86.249998 38.93) (width 0.6) (layer F.Cu) (net 30))
+=======
+>>>>>>> 598cf51b1807dbb3cb858dff6f11a90a63356555
 
 )
